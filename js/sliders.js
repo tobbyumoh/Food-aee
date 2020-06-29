@@ -4,9 +4,7 @@ $(document).ready(function() {
     $(".btn-light").on('click', function() {
         $("#search").slideDown(700);
     });
-    // $(".btn-success").on('click', function() {
-    //     $("#showResults").slideDown(2500);
-    // });
+
 
 
     $(document).on('click', ".searchList li", function(event) {

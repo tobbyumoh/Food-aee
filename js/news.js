@@ -38,19 +38,6 @@ function loadDatas() {
 }
 
 
-// const toggleMode = () => {
-//     const toggleBtn = document.querySelector(".toggleBtn");
-//     const element = document.body;
-
-
-//     if (toggleBtn.textContent == "Light Mode") {
-//         element.classList.toggle("dark-mode");
-//         toggleBtn.textContent = "Dark Mode";
-//     } else {
-//         toggleBtn.textContent = "Light Mode";
-//         !element.classList.toggle('dark-mode');
-//     }
-// };
 
 
 $(document).ready(function() {
