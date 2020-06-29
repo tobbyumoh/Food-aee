@@ -2,14 +2,9 @@ const form = document.querySelector('#input-form');
 const searchList = document.querySelector('.searchList');
 const inputFoods = document.querySelector('#inputFoods');
 const message = document.querySelector(".message");
-
 const clearSearch = document.querySelector('.clearSearchList');
 
-
-
-
 loadEventListeners();
-
 
 function loadEventListeners() {
 
@@ -220,7 +215,7 @@ function fetchFoodRecipe() {
         .then(data => {
             console.log(data);
 
-            // let output = '';
+
 
             for (i = 0; i < data.hits.length; i++) {
                 document.querySelector('.card-columns').innerHTML += `<div class="card">
@@ -245,8 +240,6 @@ function fetchFoodRecipe() {
                              `;
 
 
-
-                //document.querySelector('.card-columns').innerHTML = output;
             }
         })
         .catch(err => console.log(err));
