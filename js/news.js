@@ -14,7 +14,7 @@ function loadDatas() {
 
                                     <div class="card-body news-body">
 
-                                        <h5> <a href = "" style=" color:black;" target="_blank">${data.results[i].title}</a></h5>
+                                        <h5> <a href = "${data.results[i].url}" style=" color:black;" target="_blank">${data.results[i].title}</a></h5>
                                         <hr>
                                         <p style=" color:darkgray;">${data.results[i].abstract}</p>
                                     <div class="mt-4 news-bottom">
@@ -40,20 +40,16 @@ function loadDatas() {
 
 
 
-$(document).ready(function() {
-    const toggleBtn = $(".toggleBtn");
-
+const toggleMode = () => {
+    const toggleBtn = document.querySelector(".toggleBtn");
     const element = document.body;
 
-    toggleBtn.on('click', function() {
-        if (toggleBtn.text("Light Mode")) {
-            element.classList.toggle("dark-mode");
-            toggleBtn.text("Dark Mode");
-        } else {
-            toggleBtn.text("Light Mode");
 
-        }
-    });
-
-
-});
+    if (toggleBtn.textContent == "Light Mode") {
+        element.classList.toggle("dark-mode");
+        toggleBtn.textContent = "Dark Mode";
+    } else {
+        toggleBtn.textContent = "Light Mode";
+        !element.classList.toggle('dark-mode');
+    }
+};
