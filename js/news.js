@@ -10,7 +10,7 @@ function loadDatas() {
 
             for (i = 0; i < data.results.length; i++) {
                 output += `  <div class ="card" >
-                                <div class="card-img"> <img src = "${data.results[i].multimedia[3].url}" alt = " " class="w-100" > </div>
+                                <div class="card-img"> <img src ="${data.results[i].multimedia[3].url}" alt = " " class="w-100" style="width: 354px;height:250px;" loading="lazy"> </div>
 
                                     <div class="card-body news-body">
 
