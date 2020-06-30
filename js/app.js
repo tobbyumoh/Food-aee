@@ -232,7 +232,7 @@ function fetchFoodRecipe() {
                                         
                                         </ul>
                                         <div class="card-body" >
-                                            <span>How to cook: </span> <a href="${data.hits[i].recipe.url}" class="card-link">${data.hits[i].recipe.url}</a>
+                                            <span>How to cook: </span> <a href="${data.hits[i].recipe.url}" class="card-link" target="_blank">${data.hits[i].recipe.url}</a>
                                         </div>
                                     </div>
                                </div>
